@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('SCM Checkout'){
             steps {
-            git branch: 'main', url: 'https://github.com/jbackia19/fullstackmicroservices.git'
+            git branch: 'main', url: 'https://github.com/jbackia19/nivetha.git'
             sh 'ls'
             }
         }
@@ -63,7 +63,7 @@ pipeline {
                                     -D sonar.inclusions=index.py \
                                     -D sonar.sourceEncoding=UTF-8 \
                                     -D sonar.language=python \
-                                    -D sonar.host.url=http://3.110.164.104:9000/"""
+                                    -D sonar.host.url=http://13.235.78.5:9000/"""
                                 }
                             }
                         }
